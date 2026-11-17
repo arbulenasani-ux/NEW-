@@ -1,0 +1,254 @@
+{
+ "blocks": [
+  {
+   "id": 501,
+   "voice": "N",
+   "text": "In this town, never trust your reflection. The boy in the puddle smiled at me. But I wasn't smiling.",
+   "s": 0.05,
+   "e": 5.169,
+   "src": "higgsfield"
+  },
+  {
+   "id": 502,
+   "voice": "W",
+   "text": "Don't look at him, Alex. That thing wants your place.",
+   "s": 5.769,
+   "e": 8.934,
+   "src": "higgsfield"
+  },
+  {
+   "id": 503,
+   "voice": "N",
+   "text": "Then Mom told me the truth. Every night at 2:17, the things inside the houses look out the windows. And if you look back... they take your place.",
+   "s": 9.634,
+   "e": 16.656,
+   "src": "higgsfield"
+  },
+  {
+   "id": 504,
+   "voice": "N",
+   "text": "That's why the people outside looked so scared. They weren't the monsters. They were the real families. Locked out of their own homes. Mom has been outside for three years.",
+   "s": 17.256,
+   "e": 25.662,
+   "src": "higgsfield"
+  },
+  {
+   "id": 506,
+   "voice": "N",
+   "text": "She said there was only one way back inside. Make your reflection look away first. Before the clock hits 2:18.",
+   "s": 26.262,
+   "e": 31.809,
+   "src": "higgsfield"
+  },
+  {
+   "id": 507,
+   "voice": "N",
+   "text": "So I stared at him. He stared at me. Ten seconds. Twenty. Then the church bell rang.",
+   "s": 32.409,
+   "e": 37.282,
+   "src": "higgsfield"
+  },
+  {
+   "id": 508,
+   "voice": "N",
+   "text": "He blinked.",
+   "s": 38.282,
+   "e": 39.047,
+   "src": "higgsfield"
+  },
+  {
+   "id": 509,
+   "voice": "N",
+   "text": "The puddle went dark. And every window on the street went black.",
+   "s": 40.247,
+   "e": 43.485,
+   "src": "higgsfield"
+  },
+  {
+   "id": 510,
+   "voice": "N",
+   "text": "When I opened my eyes, I was in my room. And my real mom was holding my hand.",
+   "s": 44.185,
+   "e": 48.121,
+   "src": "higgsfield"
+  },
+  {
+   "id": 511,
+   "voice": "N",
+   "text": "That morning, the people outside finally went home.",
+   "s": 48.721,
+   "e": 51.137,
+   "src": "higgsfield"
+  },
+  {
+   "id": 512,
+   "voice": "N",
+   "text": "So now, this town has a new rule. At 2:17 AM... if something looks at you through the window... don't look away.",
+   "s": 52.037,
+   "e": 57.951,
+   "src": "higgsfield"
+  }
+ ],
+ "subs": [
+  [
+   0.05,
+   2.155,
+   "In this town, never trust your reflection."
+  ],
+  [
+   2.155,
+   4.071793154761904,
+   "The boy in the puddle smiled at me."
+  ],
+  [
+   4.071793154761904,
+   5.168645833333333,
+   "But I wasn't smiling."
+  ],
+  [
+   5.768645833333332,
+   7.233645833333332,
+   "Don't look at him, Alex."
+  ],
+  [
+   7.233645833333332,
+   8.934083333333332,
+   "That thing wants your place."
+  ],
+  [
+   9.634083333333331,
+   10.944083333333332,
+   "Then Mom told me the truth."
+  ],
+  [
+   10.944083333333332,
+   14.56408333333333,
+   "Every night at 2:17, the things inside the houses look out the windows."
+  ],
+  [
+   14.56408333333333,
+   15.617742811032862,
+   "And if you look back..."
+  ],
+  [
+   15.617742811032862,
+   16.656229166666662,
+   "they take your place."
+  ],
+  [
+   17.256229166666664,
+   19.211229166666662,
+   "That's why the people outside looked so scared."
+  ],
+  [
+   19.211229166666662,
+   20.908637152777775,
+   "They weren't the monsters."
+  ],
+  [
+   20.908637152777775,
+   22.309560763888886,
+   "They were the real families."
+  ],
+  [
+   22.309560763888886,
+   23.810550347222218,
+   "Locked out of their own homes."
+  ],
+  [
+   23.810550347222218,
+   25.66177083333333,
+   "Mom has been outside for three years."
+  ],
+  [
+   26.26177083333333,
+   28.36177083333333,
+   "She said there was only one way back inside."
+  ],
+  [
+   28.36177083333333,
+   30.42242708333333,
+   "Make your reflection look away first."
+  ],
+  [
+   30.42242708333333,
+   31.809312499999997,
+   "Before the clock hits 2:18."
+  ],
+  [
+   32.4093125,
+   33.4843125,
+   "So I stared at him."
+  ],
+  [
+   33.4843125,
+   34.3693125,
+   "He stared at me."
+  ],
+  [
+   34.3693125,
+   35.271967447916666,
+   "Ten seconds."
+  ],
+  [
+   35.271967447916666,
+   35.889312499999996,
+   "Twenty."
+  ],
+  [
+   35.889312499999996,
+   37.28191666666667,
+   "Then the church bell rang."
+  ],
+  [
+   38.28191666666667,
+   39.047270833333336,
+   "He blinked."
+  ],
+  [
+   40.24727083333334,
+   41.326548611111114,
+   "The puddle went dark."
+  ],
+  [
+   41.326548611111114,
+   43.48510416666667,
+   "And every window on the street went black."
+  ],
+  [
+   44.185104166666676,
+   46.195104166666674,
+   "When I opened my eyes, I was in my room."
+  ],
+  [
+   46.195104166666674,
+   48.120854166666675,
+   "And my real mom was holding my hand."
+  ],
+  [
+   48.720854166666676,
+   51.13660416666668,
+   "That morning, the people outside finally went home."
+  ],
+  [
+   52.03660416666668,
+   53.82710015290521,
+   "So now, this town has a new rule."
+  ],
+  [
+   53.82710015290521,
+   54.53244705657494,
+   "At 2:17 AM..."
+  ],
+  [
+   54.53244705657494,
+   57.08254740061163,
+   "if something looks at you through the window..."
+  ],
+  [
+   57.08254740061163,
+   57.95066666666668,
+   "don't look away."
+  ]
+ ]
+}

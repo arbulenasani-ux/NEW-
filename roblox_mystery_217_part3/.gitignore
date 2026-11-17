@@ -1,0 +1,8 @@
+# regenerable intermediates (run ./build.sh)
+assets/audio/voiceover.wav
+assets/audio/music_sfx.wav
+assets/audio/final_mix.wav
+output/_video_noaudio.mp4
+ffmpeg2pass*
+assets/clips/[0-9][0-9]/
+__pycache__/
