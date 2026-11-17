@@ -14,7 +14,7 @@ AUD = os.path.join(ROOT, "assets", "audio")
 VO = os.path.join(AUD, "vo")
 OUT = os.path.join(ROOT, "output")
 SR = 48000
-TOTAL = 60.0
+TOTAL = 61.0
 
 
 def load(path):

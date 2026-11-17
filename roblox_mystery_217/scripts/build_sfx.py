@@ -7,14 +7,14 @@ import numpy as np, soundfile as sf
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 AUD = os.path.join(ROOT, "assets", "audio")
-SR, T = 48000, 60.0
+SR, T = 48000, 61.0
 N = int(SR * T)
 rng = np.random.default_rng(217)
 SUBS = json.load(open(os.path.join(AUD, "timings.json")))["subs"]
 S = lambda i: SUBS[i][0]   # start of sentence i
 E_ = lambda i: SUBS[i][1]  # end of sentence i
 KNOCKS = (17.25, 17.7, 18.15)
-END_KNOCKS = (58.65, 59.1, 59.55)
+END_KNOCKS = (58.9, 59.35, 59.8)
 t = np.arange(N) / SR
 
 
@@ -115,7 +115,7 @@ hold(E_(36) + 0.15, S(37) - 0.05, 0.0)
 ramp(S(37) - 0.05, S(37) + 0.1, 0.0, 1.1)
 hold(S(37) + 0.1, END_KNOCKS[0] - 0.2, 1.1)
 ramp(END_KNOCKS[0] - 0.2, END_KNOCKS[0], 1.1, 0.2)
-hold(END_KNOCKS[0], 60.0, 0.2)
+hold(END_KNOCKS[0], 61.0, 0.2)
 music *= g
 
 # ---------------- SFX ----------------

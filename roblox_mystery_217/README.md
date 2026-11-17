@@ -1,4 +1,4 @@
-# This Town Has One Rule Nobody Understands… (Roblox-Mystery-TikTok, 60 s)
+# This Town Has One Rule Nobody Understands… (Roblox-Mystery-TikTok, 61 s)
 
 Fertiges virales Roblox-Horror-Video, aufgebaut wie das Referenzformat „In this town…“ (Ich-Erzähler, Roblox-Szenen, schnelle Schnitte etwa alle 1,5 s, leise Musik unter der Stimme), aber mit eigener Story. **Alle Inhalte im Video sind auf Englisch (US).**
 
@@ -6,7 +6,7 @@ Fertiges virales Roblox-Horror-Video, aufgebaut wie das Referenzformat „In thi
 
 | Datei | Inhalt |
 |---|---|
-| `This_Town_Has_One_Rule_217AM.mp4` | Finales Video: 1080×1920, 9:16, 30 fps, **exakt 60,000 s**, H.264 + AAC, −14 LUFS |
+| `This_Town_Has_One_Rule_217AM.mp4` | Finales Video: 1080×1920, 9:16, 30 fps, **exakt 61,000 s**, H.264 Main@4.0 (öffnet sich auf jedem Handy) + AAC, −14 LUFS, **alle Szenen animiert** |
 | `voiceover_en.mp3` / `voiceover_en.wav` | Englischer Voiceover (nur Stimme, ohne Musik) |
 | `voiceover_en.srt` | Englische Untertitel (optional, die Untertitel kommen in TikTok dazu, im Video ist nichts eingebrannt) |
 | `thumbnail_never_look_outside_217am.png` | Thumbnail „NEVER LOOK OUTSIDE AT 2:17 AM“ |
@@ -24,18 +24,23 @@ Fertiges virales Roblox-Horror-Video, aufgebaut wie das Referenzformat „In thi
 | 44–53 s | Morgen: vor jedem Haus steht jemand, und alle sehen panisch aus (Hinweis auf den Twist) |
 | 53,5 s | Stille |
 | 54–58,5 s | Twist: „It was protecting them… from us.“ Alex mit leuchtenden Augen |
-| 58,5–60 s | „PART 2“ + erneut drei Klopfer (Cliffhanger) |
+| 58,5–61 s | „PART 2“ + erneut drei Klopfer (Cliffhanger) |
 
-## Kosten (Higgsfield-Credits)
+## Kosten (Higgsfield-Credits): gesamt **155,65** (Kontostand 1004,12 → 848,47)
 
-- 23 Bilder mit Nano Banana Pro (2K, je 2 Credits): **≈46 Credits** (inklusive 1 Nachbesserung)
-- Voiceover ElevenLabs über Higgsfield (Erzähler „Dylan“, Mutter „Faye“, inklusive Stimm-Casting): **≈5 Credits**
-- **Keine KI-Videogenerierung** (das wären ≈35 Credits pro Clip gewesen). Alle Bewegungen (Zooms, Schwenks, Wackler, Blitze), das Sounddesign, der Schnitt, der Mix und das Thumbnail entstehen kostenlos lokal mit Python, PIL, NumPy und FFmpeg.
+| Posten | Credits |
+|---|---|
+| 24 Bilder Nano Banana Pro 2K (inklusive Charakterblatt und 1 Nachbesserung) | ≈ 48 |
+| Stimmen ElevenLabs (Erzähler Dylan, Mom Faye, inklusive Stimm-Casting) | ≈ 5 |
+| 20 Animationen Kling 3.0 std ohne Ton (15× 3 s à 4,5, 5× 5 s à 7,5) | ≈ 105 |
+
+Kostenlos und lokal: Sounddesign, Musik, Schnitt, Kamerabewegung, Mix, Export, Thumbnail.
 
 ## Projektstruktur
 
 ```
-assets/hf/          22 Higgsfield-Standbilder (+ Charakterblatt), jobs.json = Herkunft
+assets/hf/          Higgsfield-Standbilder (+ Charakterblatt), jobs.json = Herkunft
+assets/clips/       20 Kling-Animationen (NN.mp4), clips.json = Herkunft; fetch_clips.py extrahiert Frames
 assets/audio/vo/    Higgsfield-Sprachtakes je Block (201–210 Erzähler, 301/302 Mutter)
 assets/audio/casting/  Stimmproben (Benji, Dylan, Evan, Faye, Celine)
 assets/fonts/       Poppins (OFL) für End-Card und Thumbnail
@@ -51,7 +56,7 @@ Neu bauen: `./build.sh` (benötigt `ffmpeg`, `python3`, `numpy`, `scipy`, `pillo
 
 ## Qualitätskontrolle (bestanden)
 
-- Länge exakt 60,000 s, 1800 Frames, 1080×1920 bei 30 fps
+- Länge exakt 61,000 s, 1830 Frames, 1080×1920 bei 30 fps, H.264 Main@4.0
 - Keine schwarzen Frames (`blackdetect`)
 - Lautheit −14,2 LUFS integriert, True Peak −0,9 dBFS, kein Clipping
 - Einzige Stille ist die gewollte Pause vor dem Twist (53,55–54,12 s)

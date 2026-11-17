@@ -14,7 +14,7 @@ from script import RED, YELLOW
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 HF = os.path.join(ROOT, "assets", "hf")
 OUT = os.path.join(ROOT, "output")
-W, H, FPS, DUR = 1080, 1920, 30, 60.0
+W, H, FPS, DUR = 1080, 1920, 30, 61.0
 NF = int(DUR * FPS)
 FONT = ImageFont.truetype(os.path.join(ROOT, "assets", "fonts", "Poppins-800.ttf"), 92)
 FONT_BIG = ImageFont.truetype(os.path.join(ROOT, "assets", "fonts", "Poppins-800.ttf"), 150)
@@ -38,7 +38,7 @@ SHOTS = [
     (12.20, 5, 1.55, 1.75, (.38, .55), (.38, .52), "day"),      # story to scare kids
     (S(7), 6, 1.00, 1.15, (.55, .55), (.58, .55), "night"),     # until last night
     (S(8), 7, 1.00, 1.40, (.48, .45), (.48, .40), "night"),     # almost asleep... creeping in
-    (17.25, 8, 2.00, 2.10, (.17, .58), (.17, .58), "night"),    # KNOCKS (outside silhouette)
+    (17.25, 8, 2.10, 2.20, (.14, .55), (.20, .55), "night"),    # KNOCKS (outside silhouette)
     (S(10), 10, 1.05, 1.25, (.45, .45), (.45, .40), "night"),   # three knocks, on my window
     (S(12), 9, 1.05, 1.20, (.53, .60), (.53, .62), "red"),     # checks the clock
     (S(13), 9, 1.40, 1.85, (.53, .64), (.53, .64), "red"),      # 2:17 AM
@@ -59,10 +59,34 @@ SHOTS = [
     (S(35), 19, 1.05, 1.40, (.50, .50), (.50, .47), "fog"),     # every one of them
     (S(36), 19, 1.60, 1.80, (.50, .47), (.50, .47), "fog"),     # terrified
     (SUBS[36][1], 19, 1.80, 1.82, (.50, .47), (.50, .47), "silence"),  # silence beat
-    (S(37), 20, 1.00, 1.25, (.50, .50), (.50, .48), "night"),   # the rule was never...
-    (S(38), 21, 1.00, 1.45, (.52, .47), (.52, .46), "night"),   # protecting them...
-    (S(39), 21, 2.30, 2.60, (.52, .455), (.52, .455), "night"),   # ...from us (snap zoom)
+    (S(37), 20, 1.10, 1.30, (.50, .58), (.50, .56), "night"),   # the rule was never...
+    (S(38), 21, 1.00, 1.45, (.53, .47), (.53, .46), "night"),   # protecting them...
+    (S(39), 21, 1.90, 2.05, (.53, .46), (.53, .46), "night"),   # ...from us (snap zoom)
 ]
+# only the usable start of some clips (later frames drift: figures fade into fog / face changes)
+CLIP_MAXT = {17: 1.7, 16: 1.3, 20: 1.6}
+
+
+def _plan_clip_offsets():
+    """reused images continue their clip where the last use stopped; long shots play slower"""
+    used = {}
+    for i, sh in enumerate(SHOTS):
+        st, idx = sh[0], sh[1]
+        nxt = SHOTS[i + 1][0] if i + 1 < len(SHOTS) else DUR
+        d = os.path.join(CLIPS, f"{idx:02d}")
+        if not os.path.isdir(d):
+            continue
+        clen = len([f for f in os.listdir(d) if f.endswith(".jpg")]) / 24.0
+        clen = min(clen, CLIP_MAXT.get(idx, clen))
+        dur = nxt - st
+        off = used.get(idx, 0.0)
+        if off > clen - 0.6:
+            off = 0.0
+        spd = min(1.0, max((clen - off) / dur, 0.35))
+        CLIP_OFF[st] = (off, spd)
+        used[idx] = off + dur * spd
+
+
 PRECROP = {9: (0.0, 0.0, 0.78, 0.775)}
 END_CARD = 58.55
 BURN_CAPTIONS = False   # captions are added inside TikTok by the creator   # "PART 2" + knocks
@@ -72,7 +96,7 @@ EVENTS = [(0.0, "flash", 0.7), (2.85, "flash_red", 0.6), (9.85, "flicker", 1.0),
           (17.25, "shake", 1.0), (17.7, "shake", 1.0), (18.15, "shake", 1.0),
           (S(13), "flash_red", 0.9), (S(13), "shake", 0.6), (S(27) + 0.55, "shake", 1.2), (S(27) + 0.55, "flash", 0.5),
           (S(31), "flash", 0.35), (S(37), "flash", 0.6), (S(39) + 0.3, "flash", 0.9), (S(39) + 0.3, "shake", 1.2),
-          (58.65, "shake", 0.9), (59.1, "shake", 0.9), (59.55, "shake", 0.9)]
+          (58.9, "shake", 0.9), (59.35, "shake", 0.9), (59.8, "shake", 0.9)]
 
 
 def ease(x):
@@ -91,6 +115,29 @@ def src(idx):
             im = im.crop((int(l * im.width), int(tp * im.height), int(r * im.width), int(b * im.height)))
         _cache[idx] = im
     return _cache[idx]
+
+
+CLIPS = os.path.join(ROOT, "assets", "clips")   # animated Higgsfield clips, frames extracted to NN/0001.jpg
+CLIP_OFF = {}    # per shot start time -> offset (s) inside the clip; filled below SHOTS
+_fcache = {}
+
+
+def clip_frame(idx, ct):
+    """frame of the animated clip for image idx at clip time ct (None if no clip)"""
+    d = os.path.join(CLIPS, f"{idx:02d}")
+    if not os.path.isdir(d):
+        return None
+    if idx not in _fcache:
+        _fcache[idx] = sorted(f for f in os.listdir(d) if f.endswith(".jpg"))
+    files = _fcache[idx]
+    fps = 24.0
+    i = int(ct * fps)
+    i = min(max(i, 0), len(files) - 1)
+    im = Image.open(os.path.join(d, files[i])).convert("RGB")
+    if idx in PRECROP:
+        l, tp, r, b = PRECROP[idx]
+        im = im.crop((int(l * im.width), int(tp * im.height), int(r * im.width), int(b * im.height)))
+    return im
 
 
 def grade(im, g, t):
@@ -137,7 +184,11 @@ def render_bg(t):
     z = max(z0 + (z1 - z0) * p, 1.04)
     fx = f0[0] + (f1[0] - f0[0]) * p
     fy = f0[1] + (f1[1] - f0[1]) * p
-    im = src(idx)
+    off, spd = CLIP_OFF.get(st, (0.0, 1.0))
+    cf = clip_frame(idx, off + (t - st) * spd)
+    if cf is not None and z0 < 1.9:   # animation already moves -> gentler digital zoom (keeps it sharp)
+        z = max(1.0 + (z - 1.0) * 0.45, 1.03)
+    im = cf or src(idx)
     sw, sh = im.size
     cover = max(W / sw, H / sh)
     scale = cover * z
@@ -217,6 +268,9 @@ def end_card(fr, t):
     d.text((W // 2, y + 140), "follow so you don't miss it", font=FONT.font_variant(size=54), anchor="mm",
            fill=(255, 255, 255), stroke_width=6, stroke_fill=(0, 0, 0))
     return fr
+
+
+_plan_clip_offsets()
 
 
 def frame(i):
