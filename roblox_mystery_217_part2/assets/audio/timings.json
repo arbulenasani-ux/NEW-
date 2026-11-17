@@ -1,0 +1,261 @@
+{
+ "blocks": [
+  {
+   "id": 401,
+   "voice": "N",
+   "text": "In this town, the monsters aren't outside. I found that out the hard way. After that night, Mom started acting strange. She never sleeps. And every night at 2:16, she stands in the hallway... staring at my door.",
+   "s": 0.05,
+   "e": 11.401,
+   "src": "higgsfield"
+  },
+  {
+   "id": 402,
+   "voice": "N",
+   "text": "Then I found a note under my pillow. In my own handwriting. It said: Don't let her see you looking.",
+   "s": 11.851,
+   "e": 17.122,
+   "src": "higgsfield"
+  },
+  {
+   "id": 403,
+   "voice": "N",
+   "text": "That night, I hid under my bed. The door creaked open. Footsteps. Then... silence.",
+   "s": 17.722,
+   "e": 22.981,
+   "src": "higgsfield"
+  },
+  {
+   "id": 404,
+   "voice": "N",
+   "text": "Three knocks. From inside my closet.",
+   "s": 24.581,
+   "e": 26.934,
+   "src": "higgsfield"
+  },
+  {
+   "id": 405,
+   "voice": "W",
+   "text": "Alex... it's me. Your real mom.",
+   "s": 27.634,
+   "e": 30.644,
+   "src": "higgsfield"
+  },
+  {
+   "id": 406,
+   "voice": "N",
+   "text": "It was the woman from the yard. She said they switched places at 2:17. And we had one minute left.",
+   "s": 30.894,
+   "e": 36.11,
+   "src": "higgsfield"
+  },
+  {
+   "id": 407,
+   "voice": "N",
+   "text": "We ran for the stairs. The thing in the hallway slowly turned around. It had Mom's face... but its smile was way too wide. We made it outside. But every window on the street was full of glowing eyes. Watching us.",
+   "s": 36.46,
+   "e": 46.923,
+   "src": "higgsfield"
+  },
+  {
+   "id": 408,
+   "voice": "N",
+   "text": "Then she squeezed my hand and whispered...",
+   "s": 47.373,
+   "e": 49.172,
+   "src": "higgsfield"
+  },
+  {
+   "id": 409,
+   "voice": "W",
+   "text": "Whatever you do... don't look at your reflection.",
+   "s": 49.322,
+   "e": 53.174,
+   "src": "higgsfield"
+  },
+  {
+   "id": 410,
+   "voice": "N",
+   "text": "I looked down at the puddle. The boy in the reflection... wasn't me.",
+   "s": 54.124,
+   "e": 57.622,
+   "src": "higgsfield"
+  }
+ ],
+ "subs": [
+  [
+   0.05,
+   2.3099999999999996,
+   "In this town, the monsters aren't outside."
+  ],
+  [
+   2.3099999999999996,
+   4.017347087378641,
+   "I found that out the hard way."
+  ],
+  [
+   4.017347087378641,
+   6.1049999999999995,
+   "After that night, Mom started acting strange."
+  ],
+  [
+   6.1049999999999995,
+   7.433673745954692,
+   "She never sleeps."
+  ],
+  [
+   7.433673745954692,
+   10.025,
+   "And every night at 2:16, she stands in the hallway..."
+  ],
+  [
+   10.025,
+   11.401020833333334,
+   "staring at my door."
+  ],
+  [
+   11.851020833333333,
+   13.807275987972508,
+   "Then I found a note under my pillow."
+  ],
+  [
+   13.807275987972508,
+   15.006020833333332,
+   "In my own handwriting."
+  ],
+  [
+   15.006020833333332,
+   17.122041666666668,
+   "It said: Don't let her see you looking."
+  ],
+  [
+   17.72204166666667,
+   19.23204166666667,
+   "That night, I hid under my bed."
+  ],
+  [
+   19.23204166666667,
+   21.372041666666668,
+   "The door creaked open."
+  ],
+  [
+   21.372041666666668,
+   22.07704166666667,
+   "Footsteps."
+  ],
+  [
+   22.07704166666667,
+   22.441900106837608,
+   "Then..."
+  ],
+  [
+   22.441900106837608,
+   22.9813125,
+   "silence."
+  ],
+  [
+   24.581312500000003,
+   25.381312500000003,
+   "Three knocks."
+  ],
+  [
+   25.381312500000003,
+   26.933750000000003,
+   "From inside my closet."
+  ],
+  [
+   27.633750000000003,
+   28.37375,
+   "Alex..."
+  ],
+  [
+   28.37375,
+   29.328750000000003,
+   "it's me."
+  ],
+  [
+   29.328750000000003,
+   30.643750000000004,
+   "Your real mom."
+  ],
+  [
+   30.893750000000004,
+   32.423750000000005,
+   "It was the woman from the yard."
+  ],
+  [
+   32.423750000000005,
+   34.643750000000004,
+   "She said they switched places at 2:17."
+  ],
+  [
+   34.643750000000004,
+   36.11047916666667,
+   "And we had one minute left."
+  ],
+  [
+   36.46047916666667,
+   37.58547916666667,
+   "We ran for the stairs."
+  ],
+  [
+   37.58547916666667,
+   39.72547916666667,
+   "The thing in the hallway slowly turned around."
+  ],
+  [
+   39.72547916666667,
+   40.93010133495146,
+   "It had Mom's face..."
+  ],
+  [
+   40.93010133495146,
+   42.64047916666667,
+   "but its smile was way too wide."
+  ],
+  [
+   42.64047916666667,
+   43.65047916666667,
+   "We made it outside."
+  ],
+  [
+   43.65047916666667,
+   46.313964401294506,
+   "But every window on the street was full of glowing eyes."
+  ],
+  [
+   46.313964401294506,
+   46.92345833333334,
+   "Watching us."
+  ],
+  [
+   47.373458333333346,
+   49.17204166666668,
+   "Then she squeezed my hand and whispered..."
+  ],
+  [
+   49.32204166666668,
+   50.732041666666674,
+   "Whatever you do..."
+  ],
+  [
+   50.732041666666674,
+   53.17354166666668,
+   "don't look at your reflection."
+  ],
+  [
+   54.12354166666668,
+   55.42354166666668,
+   "I looked down at the puddle."
+  ],
+  [
+   55.42354166666668,
+   57.09170075757577,
+   "The boy in the reflection..."
+  ],
+  [
+   57.09170075757577,
+   57.62172916666668,
+   "wasn't me."
+  ]
+ ]
+}
