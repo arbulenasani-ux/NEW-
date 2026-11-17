@@ -1,0 +1,302 @@
+{
+ "blocks": [
+  {
+   "id": 201,
+   "voice": "N",
+   "text": "In this town, nobody is allowed to look outside at exactly 2:17 AM. Nobody knows who made the rule. Nobody ever explains why. At 2:16, every curtain closes. And every light goes out.",
+   "s": 0.05,
+   "e": 10.232,
+   "src": "higgsfield"
+  },
+  {
+   "id": 202,
+   "voice": "N",
+   "text": "My name is Alex. And I always thought it was just a story to scare kids. Until last night. I was almost asleep... when I heard it.",
+   "s": 10.382,
+   "e": 16.786,
+   "src": "higgsfield"
+  },
+  {
+   "id": 203,
+   "voice": "N",
+   "text": "Three knocks. On my window. I checked the clock.",
+   "s": 18.75,
+   "e": 21.346,
+   "src": "higgsfield"
+  },
+  {
+   "id": 204,
+   "voice": "N",
+   "text": "Two seventeen. A.M.",
+   "s": 22.85,
+   "e": 24.472,
+   "src": "higgsfield"
+  },
+  {
+   "id": 205,
+   "voice": "N",
+   "text": "Then I heard my mom's voice. From outside.",
+   "s": 24.672,
+   "e": 27.033,
+   "src": "higgsfield"
+  },
+  {
+   "id": 301,
+   "voice": "M",
+   "text": "Alex... please... let me in.",
+   "s": 27.183,
+   "e": 29.973,
+   "src": "higgsfield"
+  },
+  {
+   "id": 206,
+   "voice": "N",
+   "text": "I looked. She was standing in the yard. Smiling. Same sweater. Same smile. But she didn't blink. Not once.",
+   "s": 30.273,
+   "e": 36.953,
+   "src": "higgsfield"
+  },
+  {
+   "id": 207,
+   "voice": "N",
+   "text": "Then a hand grabbed my shoulder. My real mom was standing behind me.",
+   "s": 36.953,
+   "e": 40.245,
+   "src": "higgsfield"
+  },
+  {
+   "id": 302,
+   "voice": "W",
+   "text": "Don't look at her.",
+   "s": 40.345,
+   "e": 42.305,
+   "src": "higgsfield"
+  },
+  {
+   "id": 208,
+   "voice": "N",
+   "text": "I turned back. But she was still there.",
+   "s": 42.455,
+   "e": 44.386,
+   "src": "higgsfield"
+  },
+  {
+   "id": 209,
+   "voice": "N",
+   "text": "The next morning, I looked outside. In front of every single house, someone was standing. Staring into the windows. And every single one of them... looked terrified.",
+   "s": 44.386,
+   "e": 53.411,
+   "src": "higgsfield"
+  },
+  {
+   "id": 210,
+   "voice": "N",
+   "text": "The rule was never protecting us from them. It was protecting them... from us.",
+   "s": 54.161,
+   "e": 58.466,
+   "src": "higgsfield"
+  }
+ ],
+ "subs": [
+  [
+   0.05,
+   3.9899999999999998,
+   "In this town, nobody is allowed to look outside at exactly 2:17 AM."
+  ],
+  [
+   3.9899999999999998,
+   5.656049625468165,
+   "Nobody knows who made the rule."
+  ],
+  [
+   5.656049625468165,
+   6.785,
+   "Nobody ever explains why."
+  ],
+  [
+   6.785,
+   8.895000000000001,
+   "At 2:16, every curtain closes."
+  ],
+  [
+   8.895000000000001,
+   10.232416666666667,
+   "And every light goes out."
+  ],
+  [
+   10.382416666666668,
+   11.195628306878309,
+   "My name is Alex."
+  ],
+  [
+   11.195628306878309,
+   13.677416666666668,
+   "And I always thought it was just a story to scare kids."
+  ],
+  [
+   13.677416666666668,
+   14.682416666666668,
+   "Until last night."
+  ],
+  [
+   14.682416666666668,
+   15.857416666666667,
+   "I was almost asleep..."
+  ],
+  [
+   15.857416666666667,
+   16.786458333333336,
+   "when I heard it."
+  ],
+  [
+   18.75,
+   19.48359329710145,
+   "Three knocks."
+  ],
+  [
+   19.48359329710145,
+   20.49,
+   "On my window."
+  ],
+  [
+   20.49,
+   21.345791666666667,
+   "I checked the clock."
+  ],
+  [
+   22.85,
+   24.18574754901961,
+   "2:17"
+  ],
+  [
+   24.18574754901961,
+   24.471979166666667,
+   "AM."
+  ],
+  [
+   24.671979166666667,
+   26.28471087398374,
+   "Then I heard my mom's voice."
+  ],
+  [
+   26.28471087398374,
+   27.033479166666666,
+   "From outside."
+  ],
+  [
+   27.183479166666665,
+   27.983479166666665,
+   "Alex..."
+  ],
+  [
+   27.983479166666665,
+   28.908479166666666,
+   "please..."
+  ],
+  [
+   28.908479166666666,
+   29.973479166666664,
+   "let me in."
+  ],
+  [
+   30.273479166666664,
+   30.933479166666665,
+   "I looked."
+  ],
+  [
+   30.933479166666665,
+   32.38347916666667,
+   "She was standing in the yard."
+  ],
+  [
+   32.38347916666667,
+   33.34603958333333,
+   "Smiling."
+  ],
+  [
+   33.34603958333333,
+   34.08347916666666,
+   "Same sweater."
+  ],
+  [
+   34.08347916666666,
+   34.94347916666666,
+   "Same smile."
+  ],
+  [
+   34.94347916666666,
+   36.158479166666666,
+   "But she didn't blink."
+  ],
+  [
+   36.158479166666666,
+   36.95295833333333,
+   "Not once."
+  ],
+  [
+   36.95295833333333,
+   38.52529664179104,
+   "Then a hand grabbed my shoulder."
+  ],
+  [
+   38.52529664179104,
+   40.24504166666666,
+   "My real mom was standing behind me."
+  ],
+  [
+   40.34504166666666,
+   42.30504166666666,
+   "Don't look at her."
+  ],
+  [
+   42.45504166666666,
+   43.17504166666666,
+   "I turned back."
+  ],
+  [
+   43.17504166666666,
+   44.38585416666666,
+   "But she was still there."
+  ],
+  [
+   44.38585416666666,
+   46.01085416666666,
+   "The next morning, I looked outside."
+  ],
+  [
+   46.01085416666666,
+   48.95585416666666,
+   "In front of every single house, someone was standing."
+  ],
+  [
+   48.95585416666666,
+   50.72043413561076,
+   "Staring into the windows."
+  ],
+  [
+   50.72043413561076,
+   52.12585416666666,
+   "And every single one of them..."
+  ],
+  [
+   52.12585416666666,
+   53.41122916666666,
+   "looked terrified."
+  ],
+  [
+   54.16122916666666,
+   56.29122916666666,
+   "The rule was never protecting us from them."
+  ],
+  [
+   56.29122916666666,
+   57.63122916666666,
+   "It was protecting them..."
+  ],
+  [
+   57.63122916666666,
+   58.46639583333332,
+   "from us."
+  ]
+ ]
+}

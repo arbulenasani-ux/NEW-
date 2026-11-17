@@ -1,0 +1,6 @@
+# regenerable intermediates (run ./build.sh)
+assets/audio/voiceover.wav
+assets/audio/music_sfx.wav
+assets/audio/final_mix.wav
+output/_video_noaudio.mp4
+ffmpeg2pass*
